@@ -1,0 +1,83 @@
+@font-face {
+    font-family: "NunitoSans";
+    src: url('/fonts/font-family/NunitoSans-Regular.ttf');
+}
+
+*{
+    box-sizing: border-box;
+    margin: auto;
+    padding: auto;
+    font-family: "NunitoSans", sans-serif;
+}
+
+div#wrapper{
+    width: 70%; 
+}
+
+div.tabs{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    height: 50px;
+    margin-top: 50px;
+    max-width: 720px;
+}
+
+div.tab-item{
+    margin-left: 0;
+    margin-right: 0;
+    height: 100%;
+    background-color: #fff;
+    opacity: 0.6;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    font-size: 20px;
+    display: flex;
+}
+
+div.tab-item:hover{
+    opacity: 1;
+    background-color: rgba(194, 53, 100, 0.1);
+    border-color: rgba(194, 53, 100, 0.1);
+}
+
+div.tab-item.active h3,
+div.tab-item:hover h3{
+    color: #000;
+}
+
+div.tab-item.active{
+    border-bottom: 5px solid #c23564;
+    opacity: 1;
+}
+
+.tab-item h3{
+    display: inline-block;
+    color: #e7127dba;
+    padding: 0px 15px;
+    line-height: 50px;
+}
+
+.tab-item i{
+    color: #e7127dba;
+    margin-left: 3px;
+}
+
+.tab-content{
+    margin-top: 20px;
+}
+
+
+.tab-pane.show{
+    display: block;
+}
+
+.tab-pane{
+    display: none;
+    max-width: 720px;
+}
+
+.tab-pane h2{
+    margin-bottom: 20px;
+}
+
